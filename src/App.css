@@ -1,38 +1,61 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Gaegu&family=Nanum+Gothic&display=swap");
+body {
+  min-height: 750px;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: "Nanum Gothic";
+  color: #424242;
+  font-weight: 600;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+header {
+  width: 1200px;
+  margin: 0 auto 30px auto;
+  border-bottom: solid 3px pink;
+  user-select: none;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+header img {
+  cursor: pointer;
+  width: 240px;
+  height: 60px;
+}
+.flex {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+ul {
+  margin-left: 180px;
+  display: flex;
+}
+header li {
+  cursor: pointer;
+  padding: 20px 60px;
+  font-size: 18px;
+  white-space: nowrap;
+}
+/* Link는 디자인 => 실제로는 a태그 */
+li a {
+  text-decoration: none;
+  color: #424242;
+}
+li a:hover {
+  color: pink;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media screen and (max-width: 768px) {
+  header {
+    width: 700px;
   }
-  to {
-    transform: rotate(360deg);
+  .music-world {
+    text-align: center;
+  }
+  .flex {
+    display: block;
+  }
+  ul {
+    margin-left: 0px;
   }
 }

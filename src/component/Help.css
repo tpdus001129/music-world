@@ -1,0 +1,30 @@
+.help-box {
+  border: solid 2px pink;
+  border-radius: 15px;
+  box-sizing: border-box;
+  width: 1200px;
+  margin: 30px auto;
+  text-align: center;
+}
+.help-box h2 {
+  margin-top: 50px;
+}
+.help-box p {
+  font-size: 20px;
+}
+.help-box img {
+  width: 900px;
+  margin-top: 20px;
+}
+.help-list {
+  margin: 40px 0;
+}
+
+@media screen and (max-width: 768px) {
+  .help-box {
+    width: 650px;
+  }
+  .help-box img {
+    width: 600px;
+  }
+}
