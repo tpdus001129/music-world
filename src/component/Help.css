@@ -11,6 +11,7 @@
 }
 .help-box p {
   font-size: 20px;
+  padding: 10px;
 }
 .help-box img {
   width: 900px;
@@ -22,9 +23,9 @@
 
 @media screen and (max-width: 768px) {
   .help-box {
-    width: 650px;
+    width: 90vw;
   }
   .help-box img {
-    width: 600px;
+    width: 80vw;
   }
 }

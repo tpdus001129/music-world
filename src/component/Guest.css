@@ -36,9 +36,9 @@ input {
 
 @media screen and (max-width: 768px) {
   input {
-    width: 500px;
+    width: 70vw;
   }
   .input-list {
-    width: 500px;
+    width: 80vw;
   }
 }

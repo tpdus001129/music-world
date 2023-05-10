@@ -43,6 +43,10 @@ nav {
   position: relative;
   display: flex;
 }
+.nav-space button {
+  margin-top: 5px;
+}
+
 .img-change {
   font-size: 15px;
   color: white;
@@ -65,13 +69,12 @@ button {
   cursor: pointer;
   font-family: "Nanum Gothic";
   font-weight: 600;
-  margin-top: 3px;
 }
+
 button:hover,
 .img-change:hover {
   box-shadow: 2px 2px 3px lightgrey;
 }
-
 .message {
   border: solid 2px pink;
   border-radius: 10px;
@@ -125,35 +128,46 @@ iframe {
 }
 main textarea {
   resize: none;
+  padding: 10px;
   font-size: 15px;
   font-family: "Nanum Gothic";
-  width: 80%;
-  padding: 10px;
   box-sizing: border-box;
-  position: absolute;
-  right: 0;
+  margin-left: 20px;
   margin-right: 40px;
+  width: 85%;
 }
 main button {
   display: block;
+  margin-right: 20px;
   margin-bottom: 10px;
-  margin-left: 40px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.change-youtube {
+  margin-top: 50px;
 }
 
 @media screen and (max-width: 768px) {
-  .home-box,
+  .home-box {
+    display: block;
+    width: 90vw;
+  }
   nav,
   main {
-    width: 650px;
+    width: 100%;
     display: block;
   }
-  .profile {
-    height: 500px;
+  .message {
+    height: 220px;
+  }
+  .message button {
+    margin-top: 5px;
   }
   nav {
-    margin-bottom: 170px;
+    margin-bottom: 25px;
   }
   main textarea {
-    width: 500px;
+    width: 65vw;
   }
 }

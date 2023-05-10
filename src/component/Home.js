@@ -151,7 +151,9 @@ function Home() {
                 onChange={onChangeV}
                 value={video2}
               />
-              <button type="submit">수정</button>
+              <button type="submit" className="change-youtube">
+                수정
+              </button>
             </form>
             <button onClick={deleteVideo}>삭제</button>
           </div>
